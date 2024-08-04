@@ -30,10 +30,6 @@ form:
         0: PLUGIN_ADMIN.DISABLED
       validate:
         type: bool
-    text_var:
-      type: text
-      label: PLUGIN_GTM_PLUGIN.TEXT_VARIABLE
-      help: PLUGIN_GTM_PLUGIN.TEXT_VARIABLE_HELP
     container_id:
       type: text
       label: PLUGIN_GTM_PLUGIN.CONTAINER_ID
