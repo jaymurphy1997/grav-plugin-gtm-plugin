@@ -1,8 +1,6 @@
 # Gtm Plugin Plugin
 
-**This README.md file should be modified to describe the features, installation, configuration, and general usage of the plugin.**
-
-The **Gtm Plugin** Plugin is an extension for [Grav CMS](https://github.com/getgrav/grav). Installs Google Tag Manager code and updates the dataLayer.
+The **Gtm Plugin** Plugin is an extension for [Grav CMS](https://github.com/getgrav/grav). Installs Google Tag Manager code and updates the dataLayer without any changes to code.
 
 ## Installation
 
@@ -40,17 +38,31 @@ Here is the default configuration and an explanation of available options:
 enabled: true
 ```
 
+```yaml
+GTM Container ID: ""
+```
+
+* GTM Container ID: Fill in with the GTM Container ID from Google Tag Manager (typically of the form "GTM-.*")
+
 Note that if you use the Admin Plugin, a file with your configuration named gtm-plugin.yaml will be saved in the `user/config/plugins/`-folder once the configuration is saved in the Admin.
 
 ## Usage
 
-**Describe how to use the plugin.**
+1. Sign in to your [Google Tag Manager account](https://analytics.google.com/).
+2. Select the **Admin** tab.
+3. Select an account from the dropdown in the _ACCOUNT_ column.
+4. Select a Container from the dropdown in the _CONTAINER_ column.
+5. In the upper right hand of the _WORKSPACE_ _OVERVIEW_, click the link starting with "GTM-" - copy this full string - it is your **GTM CONTAINER ID** 
+6. Copy the **GTM CONTAINER ID** (a string like _GTM-XXXXXXX_)
+7. Add it to the configuration of this plugin.
 
 ## Credits
 
-**Did you incorporate third-party code? Want to thank somebody?**
+Inspired by the Grav Ganalytics Plugin, John Linhart (admin@escope.cz), Christian Worreschk (cw@marsec.de)
+https://github.com/escopecz/grav-ganalytics Thanks!
 
 ## To Do
 
-- [ ] Future plans, if any
+- [ ] Allow different 'dataLayer' names
+- [ ] Add website and page information to the dataLayer to allow marketing tag capture and future analysis
 
