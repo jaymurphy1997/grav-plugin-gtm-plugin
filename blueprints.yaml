@@ -34,3 +34,7 @@ form:
       type: text
       label: PLUGIN_GTM_PLUGIN.TEXT_VARIABLE
       help: PLUGIN_GTM_PLUGIN.TEXT_VARIABLE_HELP
+    container_id:
+      type: text
+      label: PLUGIN_GTM_PLUGIN.CONTAINER_ID
+      help: PLUGIN_GTM_PLUGIN.CONTAINER_ID_HELP
