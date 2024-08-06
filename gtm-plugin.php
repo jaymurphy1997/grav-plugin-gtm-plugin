@@ -63,7 +63,8 @@ class GtmPluginPlugin extends Plugin
         $this->grav['assets']->addInlineJs($headCode, null, "head");
  
         $bodyCode = $this->getBodyContainerCode($containerId);
-        $this->grav['assets']->addInlineJs($bodyCode, null, "bottom");
+        $content = preg_replace('"/(<body.*?>)/is", "$1".{$bodyCode}, $this->grav->output);
+		$this->grav->output = $content;
     }
 
     /**
