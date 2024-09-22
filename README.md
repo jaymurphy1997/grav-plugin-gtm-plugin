@@ -39,7 +39,7 @@ enabled: true
 ```
 
 ```yaml
-GTM Container ID: ""
+GTM Container ID: Add the Container ID here
 ```
 
 * GTM Container ID: Fill in with the GTM Container ID from Google Tag Manager (typically of the form "GTM-.*")
