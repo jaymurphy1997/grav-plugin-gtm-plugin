@@ -47,14 +47,22 @@ GTM Container ID: ""
 Note that if you use the Admin Plugin, a file with your configuration named gtm-plugin.yaml will be saved in the `user/config/plugins/`-folder once the configuration is saved in the Admin.
 
 ## Usage
-
+First you will need to create a Google Tag Manager container.  Follow the steps below:
 1. Sign in to your [Google Tag Manager account](https://analytics.google.com/).
 2. Select the **Admin** tab.
 3. Select an account from the dropdown in the _ACCOUNT_ column.
 4. Select a Container from the dropdown in the _CONTAINER_ column.
 5. In the upper right hand of the _WORKSPACE_ _OVERVIEW_, click the link starting with "GTM-" - copy this full string - it is your **GTM CONTAINER ID** 
 6. Copy the **GTM CONTAINER ID** (a string like _GTM-XXXXXXX_)
-7. Add it to the configuration of this plugin.
+
+Now add this Container ID to the Grav Gtm Plugin
+
+1. Login to your Grav CMS Admin
+2. Click on the Plugins menu on the left side of your Admin panel.
+3. Click on the "Gtm Plugin" link.
+4. Enable the plugin
+5. Add the Container ID to the "GTM Container ID" plugin field.
+6. Click on the Save button (upper right hand corner).
 
 ## Credits
 
